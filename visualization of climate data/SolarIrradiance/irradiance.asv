@@ -1,0 +1,45 @@
+%%Setup and initialize
+clc
+clearvars
+close all hidden
+%%   Find the necessary files in Netcdf format
+if ~exist('data','dir')
+    error('You need to create a data folder and copy the downloaded file to the data folder and extract contents.')
+end
+datafolder = fullfile(pwd,"data");
+t = struct2table(dir(fullfile(datafolder,"*")));
+files = string(t.name(contains(t.name,'adaptor.mars.internal-1641239222.617989-25557-8-34e7f85e-486b-48db-be44-7e1fcd7122eb') & contains(t.name,'.nc')));
+%%  Examine the contents of the netcdf file
+file = fullfile(datafolder,files(1));
+ncdisp(file)
+lat = double(ncread(file,'latitude'));
+lon = double(ncread(file,"longitude"));
+si = double(ncread(file,'ssrd'));
+time = double(ncread(file,'time'));
+k=zeros(1440,721);
+for i=1:length(time)
+    k=k+(si(:,:,i));
+    i=i+1;
+end
+b=
+k=k'/86400000;
+time = ncread(file,'time');dtime=datetime(1900,1,1,time,0,0);
+% ssr= ones(length(lon),length(lat));
+% for n = 1:size(time)
+%     ssr =
+
+gcolor = [1 1 1];
+latlim = double([min(lat(:)) max(lat(:))]);
+f = figure;
+
+% colormap(f,cmap);
+titlestr = " Surface Solar irradiance " 
+ax = axesm('robinson','Frame','on',Grid='on',MapLatLimit=latlim,GColor=gcolor);
+% caxis(ax,[min(levels) max(levels)])
+load coastlines
+surfm(lat,lon,si(:,:,7)');
+plotm(coastlat,coastlon,'LineWidth',1,'Color','black')
+colorbar
+h.Label.String = "Surface solar radation downwards";
+title(titlestr)
+
