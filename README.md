@@ -13,7 +13,7 @@ In this project, I developed deep learning models for the optical inspection of 
 
 ---
 
-<img align = "left" width = "240" height = "180" src = "https://github.com/user-attachments/assets/a8939279-f29e-4e67-b3a7-41be41e71818"></img> **[Unlocking the mysteries of Faster-RCNN](https://github.com/paineni/Projects/tree/main/fster_rcnn_decoded)**
+<img align = "left" width = "240" height = "180" src = "https://github.com/user-attachments/assets/a8939279-f29e-4e67-b3a7-41be41e71818"></img> **[Unlocking the mysteries of Faster-RCNN](https://github.com/paineni/Projects/tree/main/faster_rcnn_decoded)**
 
 In this project, I thoroughly studied and decoded the Faster R-CNN architecture. I delved into the original research paper, meticulously breaking down the step-by-step implementation process. This involved understanding the underlying concepts, algorithms, and practical applications of the Faster R-CNN for object detection.
 
