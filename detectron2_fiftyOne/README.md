@@ -1,6 +1,6 @@
-# Detectron2 Dataset Preparation
+# Detectron2 Fiftyone
 
-This repository contains tools and scripts for preparing datasets to be used with Detectron2, a popular object detection and segmentation framework. The project leverages FiftyOne for dataset management and provides functionality to split datasets, format annotations, and register datasets with Detectron2.
+This repository contains tools and scripts for preparing datasets to be used with Detectron2, a popular object detection and segmentation framework. The project leverages FiftyOne for dataset management and provides functionality to split datasets, format annotations, register datasets with Detectron2 also train and evaluate the model performance.
 
 ---
 
@@ -22,6 +22,8 @@ This repository contains tools and scripts for preparing datasets to be used wit
 ### 4. Visualization Tools
 - (Planned) Visualization utilities to inspect dataset annotations and splits.
 
+### 4. Train and Evaluate the model
+- Train and evaluate the metrics the appropriate metrics using fifty-one evaluation
 ---
 
 ## Installation
@@ -46,6 +48,7 @@ Ensure that Python 3.7 or higher is installed on your system.
 3. Install dependencies:
    ```bash
    pip install -r requirements.txt
+   pip install -r requirements_git.txt
    ```
 
 4. Ensure your dataset is placed in the `prepared` directory. Modify paths in the notebook if necessary.
