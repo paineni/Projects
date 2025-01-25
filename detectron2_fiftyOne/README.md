@@ -136,12 +136,6 @@ register_coco_instances("my_dataset", {}, "path/to/annotations.json", "path/to/i
 - [Detectron2](https://github.com/facebookresearch/detectron2)
 - NumPy, OpenCV, Matplotlib, Pandas
 
----
-
-## Roadmap
-- Add visualization tools for annotations and dataset splits.
-- Automate dataset preparation with a command-line interface.
-- Provide training scripts for Detectron2.
 
 ---
 
