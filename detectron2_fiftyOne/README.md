@@ -22,8 +22,8 @@ This repository contains tools and scripts for preparing datasets to be used wit
 ### 4. Visualization Tools
 - (Planned) Visualization utilities to inspect dataset annotations and splits.
 
-### 4. Train and Evaluate the model
-- Train and evaluate the metrics the appropriate metrics using fifty-one evaluation
+### 5. Train and Evaluate the model
+- (panned) Train and evaluate the metrics the appropriate metrics using fifty-one evaluation
 ---
 
 ## Installation
