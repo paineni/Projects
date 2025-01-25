@@ -40,4 +40,4 @@ This project demonstrates the process of using a pre-trained VGG16 model to extr
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your_username/VGG16-SVM-Image-Classification.git
+   git clone https://github.com/paineni/Projects.git
