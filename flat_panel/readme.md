@@ -1,11 +1,3 @@
-#### You've hit your free quota for the Model Agent. For more usage of the Model Agent, learn more at: https://you.com/plans.
-
-Answering your question without the Model Agent:
-
-Here’s a structured and engaging README summary for your VGG16-SVM Image Classification Model project, formatted in Markdown with relevant badges and emojis:
-
----
-
 # VGG16-SVM Image Classification Model 🖼️🤖
 
 ![Python version](https://img.shields.io/badge/Python%20version-3.x-light)
