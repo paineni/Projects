@@ -1,6 +1,4 @@
-🌍 Climate Data Visualization with SSRD and AST 🌞
-
-# 🌍 Climate Data Visualization
+# 🌍 Climate Data Visualization 🌞
 
 ![License](https://img.shields.io/badge/license-Public%20License-blue.svg)
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2020b%20or%20later-orange.svg)
