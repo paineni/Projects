@@ -55,21 +55,11 @@ This repository provides a **step-by-step breakdown of the Faster R-CNN architec
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/paineni/Projects.git
+   cd faster_rcnn_decoded
    ```
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Open the Jupyter Notebook:
-   ```bash
-   jupyter notebook frcnn_decoding.ipynb
-   ```
-
-4. Follow the step-by-step explanation in the notebook.
+2. Follow the step-by-step explanation in the notebook.
 
 ---
 
@@ -85,4 +75,4 @@ This project is licensed under the **Public License**. Feel free to use it for y
 
 ---
 
-This README is designed to make your repository intuitive and engaging for users who want to understand the Faster R-CNN architecture without diving into training. Let me know if you need further adjustments! 😊
+This README is designed to make your repository intuitive and engaging for users who want to understand the Faster R-CNN architecture without diving into training.
