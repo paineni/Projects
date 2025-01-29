@@ -36,7 +36,7 @@ Ensure Python **3.7+** is installed on your system.
 
    ```bash
    git clone https://github.com/paineni/Projects.git
-   cd Projects
+   cd Projects/detectron2_fiftyone
    ```
 
 2. Create and activate a virtual environment:
