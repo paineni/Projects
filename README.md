@@ -7,6 +7,12 @@ This portfolio showcases a collection of data-driven projects I've completed as 
 
 ## Machine Learning and Deep Learning Projects
 
+<img align = "left" width = "240" height = "180" src="https://github.com/user-attachments/assets/81573cf1-6d53-42e6-ae5c-c42191d2d768"></img> **[YOLOv1 with VGG Architecture for Object Detection](https://github.com/paineni/Projects/tree/main/yolov1)**
+
+In this project, I implemented the YOLOv1 (You Only Look Once) architecture with a VGG-based model for object detection. The system is designed to identify and classify objects in images in a single pass, significantly improving the accuracy of the detected classes. I trained the model on various datasets, fine-tuning the VGG architecture to enhance the feature extraction process for object localization and classification in real-time applications.
+
+---
+
 <img align = "left" width = "240" height = "180" src="https://github.com/user-attachments/assets/bcd0e8f2-9ab1-4308-ad40-da10483f30f4"></img> **[Creation of Deep Learning models for Optical Inspection of Printed Flat panels](https://github.com/paineni/Projects/tree/main/flat_panel)**
 
 In this project, I developed deep learning models for the optical inspection of printed flat panels. I utilized a convolutional neural network (CNN) with a VGG16 architecture, modifying it to extract features up to the first fully connected layer (fc1). To simulate real-world scenarios, I augmented the dataset with artificially created defects. Finally, I trained a Support Vector Machine (SVM) as the final classifier to distinguish between good and defective images based on the extracted features.
@@ -35,8 +41,4 @@ In this project, I focused on visualizing climate data to facilitate a deeper un
 
 In this project, I used MATLAB to apply machine learning techniques, such as Principal Component Analysis (PCA), and geometric transformations to identify the axis direction in an incomplete point cloud. I developed a novel hit-and-trial criterion for estimating the axis location, leading to precise alignment and enhanced estimation accuracy. This approach, incorporating both PCA and geometric transformations, significantly improved the interpretation and alignment of point cloud data.
 
----
 
-<img align = "left" width = "240" height = "180" src="https://github.com/user-attachments/assets/81573cf1-6d53-42e6-ae5c-c42191d2d768"></img> **[YOLOv1 with VGG Architecture for Object Detection](https://github.com/paineni/Projects/tree/main/yolov1)**
-
-In this project, I implemented the YOLOv1 (You Only Look Once) architecture with a VGG-based model for object detection. The system is designed to identify and classify objects in images in a single pass, significantly improving the accuracy of the detected classes. I trained the model on various datasets, fine-tuning the VGG architecture to enhance the feature extraction process for object localization and classification in real-time applications.
