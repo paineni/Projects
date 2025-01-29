@@ -1,8 +1,4 @@
-Here’s a more structured version of your repository’s README with relevant badges and emojis:
-
----
-
-# Dataset Preparation for Detectron2 🔍
+# Detectron2 Integration with FiftyOne for Dataset Preparation & Management 🤖📊 
 
 ![Python version](https://img.shields.io/badge/Python%20version-3.7+-light)
 
