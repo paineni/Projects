@@ -50,7 +50,7 @@ Ensure Python **3.7+** is installed on your system.
 3. Install dependencies:
 
    ```bash
-   pip install -r requirements.txt
+   pip install fiftyone
    pip install -r requirements_git.txt
    ```
 
