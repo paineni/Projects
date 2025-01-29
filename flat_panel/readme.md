@@ -58,4 +58,4 @@ This project is licensed under the **Public License**. Feel free to use it for y
 
 ---
 
-This README is designed to provide a clear and engaging overview of your VGG16-SVM Image Classification Model project. Let me know if you need any further adjustments! 😊
+This README is designed to provide a clear and engaging overview of your VGG16-SVM Image Classification Model project. 
