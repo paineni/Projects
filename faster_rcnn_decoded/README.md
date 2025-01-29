@@ -73,6 +73,4 @@ Contributions are welcome! Feel free to open issues or submit pull requests to i
 
 This project is licensed under the **Public License**. Feel free to use it for your own projects! 🎉
 
----
 
-This README is designed to make your repository intuitive and engaging for users who want to understand the Faster R-CNN architecture without diving into training.
