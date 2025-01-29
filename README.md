@@ -35,9 +35,4 @@ In this project, I focused on visualizing climate data to facilitate a deeper un
 
 In this project, I used MATLAB to apply machine learning techniques, such as Principal Component Analysis (PCA), and geometric transformations to identify the axis direction in an incomplete point cloud. I developed a novel hit-and-trial criterion for estimating the axis location, leading to precise alignment and enhanced estimation accuracy. This approach, incorporating both PCA and geometric transformations, significantly improved the interpretation and alignment of point cloud data.
 
----
-
-<img align = "left" width = "240" height = "180" src = "https://github.com/user-attachments/assets/0e476f96-5ef8-4a5b-9161-84f35d731201"></img> **[Real-Time Detection and Regulation of Chatter Vibrations in Milling Operations](https://github.com/paineni/Projects/tree/main/chatter%20vibrations)**
-
-In this interdisciplinary project, which blends mechanical and electrical engineering principles, I focused on the real-time detection and regulation of chatter vibrations in milling operations. Utilizing multimodal vibration sensors and advanced signal processing filters, I enhanced machining reliability by effectively monitoring and identifying chatter. The project involved a thorough evaluation of filtering methods to pinpoint the most effective technology for real-time chatter detection and mitigation, integrating concepts from vibrations and signal processing within the realm of mechatronics.
 
