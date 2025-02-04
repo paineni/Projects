@@ -1,4 +1,4 @@
-# YOLOv1 with VGG-16 Integration: A Custom Object Detection Model 🚀
+# YOLOv1 (from scratch) with VGG-16 Integration: A Custom Object Detection Model 🚀
 
 ![Python version](https://img.shields.io/badge/Python%20version-3.10.10-light)
 ![Framework](https://img.shields.io/badge/Framework-PyTorch-blue)
@@ -6,14 +6,14 @@
 ![License](https://img.shields.io/badge/License-Public-green)
 ![Open Source Love](https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F-Open%20Source-pink)
 
-This repository implements **YOLOv1** from scratch, incorporating **VGG-16** as an integrated classifier in the training loop for object detection. The model is trained to detect objects by leveraging YOLO's architecture with a VGG-16 backbone for feature extraction.
+This repository implements **YOLOv1** from scratch, incorporating **VGG-16** as an integrated classifier in the training loop for object detection. The model is trained to detect objects by leveraging YOLO's architecture along with VGG-16 for classifying the detected objects in a single training .
 
 ---
 
 ## 📚 Key Features
 
 - **End-to-End YOLOv1 Implementation**: Built from scratch, including custom **BeanDataset** and model architecture.
-- **VGG-16 Integration**: Integrates **VGG-16** as a classifier in the training loop to enhance feature extraction.
+- **VGG-16 Integration**: Integrates **VGG-16** as a classifier in the training loop to enhance classification.
 - **Bounding Box Processing**: Uses **Non-Maximum Suppression (NMS)** to refine predictions and remove redundant boxes.
 - **Image Transformations**: Applies custom image transformations, including resizing and tensor conversion.
 
