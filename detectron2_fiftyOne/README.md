@@ -1,13 +1,9 @@
 # Detectron2 Integration with FiftyOne for Dataset Preparation & Management 🤖📊 
 
 ![Python version](https://img.shields.io/badge/Python%20version-3.7+-light)
-
 ![Framework](https://img.shields.io/badge/Framework-Detectron2-blue)
-
 ![Type](https://img.shields.io/badge/Type-Object%20Detection-green)
-
 ![License](https://img.shields.io/badge/License-MIT-green)
-
 ![Open Source Love](https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F-Open%20Source-pink)
 
 This repository provides tools to prepare datasets for **Detectron2**, utilizing **FiftyOne** for dataset management. It includes dataset splitting, annotation formatting, dataset registration, and model training.
