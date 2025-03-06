@@ -8,12 +8,13 @@
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-blue)
 ![LSTM-RNN](https://img.shields.io/badge/LSTM-RNN-deepblue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red)
-
+![Early-Stopping](https://img.shields.io/badge/Early%20Stopping-Regularization-orange)
 
 ## 📌 Overview
 This repository provides an implementation of a **Next Word Prediction** model using **Long Short-Term Memory (LSTM) networks**. The model is trained on **Shakespeare's Hamlet** text data and can predict the next word in a given sentence.
 
 ## 🚀 Key Features
+- **Deployed on Streamlit Cloud**: The model is hosted on **Streamlit Cloud**, allowing users to interact with it online without any local setup.
 - **Data Preprocessing**: Tokenization, sequence creation, and padding of textual data.
 - **Deep Learning Model**: LSTM-based neural network for sequence prediction.
 - **Training with Early Stopping**: Prevents overfitting by stopping when validation loss stops improving.
@@ -24,13 +25,14 @@ This repository provides an implementation of a **Next Word Prediction** model u
 ## 🛠️ Setup Instructions
 
 ### **Prerequisites**
+Ensure you have **Python 3.10+** installed.
 Ensure you have **Python 3.7+** installed.
 
 ### **Installation Steps**
 Clone the repository:
 ```sh
-git clone https://github.com/your-repo/next-word-prediction.git
-cd next-word-prediction
+git clone https://github.com/paineni/Projects.git
+cd LSTM_RNN
 ```
 
 Create and activate a virtual environment:
@@ -49,6 +51,12 @@ pip install -r requirements.txt
 
 ---
 ## 🧑‍💻 Usage
+
+### **🌐 Try it Online**
+The model is deployed on **Streamlit Cloud** and can be accessed here:
+
+🔗 **[Live Demo](your-streamlit-app-link)**
+
 
 ### **1️⃣ Train the Model**
 Run the training script to preprocess data and train the LSTM model:
