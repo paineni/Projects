@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 #Load the LSTM Model
-model=load_model('LSTM_RNN/nect_word_lstm.keras')
+model=load_model('LSTM_RNN/next_word_lstm.keras')
 
 #3 Laod the tokenizer
 with open('LSTM_RNN/tokenizer.pkl','rb') as handle:
