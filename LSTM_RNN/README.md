@@ -4,6 +4,11 @@
 ![Framework](https://img.shields.io/badge/Framework-TensorFlow-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red)
+![NLTK](https://img.shields.io/badge/NLTK-Natural%20Language%20Toolkit-yellowgreen)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-blue)
+![LSTM-RNN](https://img.shields.io/badge/LSTM-RNN-deepblue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red)
+
 
 ## 📌 Overview
 This repository provides an implementation of a **Next Word Prediction** model using **Long Short-Term Memory (LSTM) networks**. The model is trained on **Shakespeare's Hamlet** text data and can predict the next word in a given sentence.
@@ -78,6 +83,10 @@ This project is licensed under the **MIT License**.
 ---
 ## 🤝 Contributing
 Feel free to **open issues** or submit **pull requests** to improve this project. Suggestions are welcome!
+
+---
+## 📞 Contact
+For any queries, reach out via **[your-email@example.com](mailto:your-email@example.com)** or open an issue in the repository.
 
 🚀 Happy Coding!
 
