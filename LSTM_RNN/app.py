@@ -3,6 +3,12 @@ import numpy as np
 import pickle
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+import zipfile
+import os
+
+with zipfile.ZipFile("nect_word_lstm.zip", "r") as zip_ref:
+    zip_ref.extractall(".")
+
 
 #Load the LSTM Model
 model=load_model('nect_word_lstm.keras')
