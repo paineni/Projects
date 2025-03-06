@@ -7,10 +7,10 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 #Load the LSTM Model
-model=load_model('projects/LSTM_RNN/nect_word_lstm.keras')
+model=load_model('LSTM_RNN/nect_word_lstm.keras')
 
 #3 Laod the tokenizer
-with open('projects/LSTM_RNN/tokenizer.pkl','rb') as handle:
+with open('LSTM_RNN/tokenizer.pkl','rb') as handle:
     tokenizer=pickle.load(handle)
 
 # Function to predict the next word
