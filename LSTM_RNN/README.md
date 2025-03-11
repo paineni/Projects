@@ -26,7 +26,7 @@ This repository provides an implementation of a **Next Word Prediction** model u
 
 ### **Prerequisites**
 Ensure you have **Python 3.10+** installed.
-Ensure you have **Python 3.7+** installed.
+
 
 ### **Installation Steps**
 Clone the repository:
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ---
 ## 🧑‍💻 Usage
 
-### **🌐 Try it Online**
+### **🌐 Try it Online (Work in Progress)**
 The model is deployed on **Streamlit Cloud** and can be accessed here:
 
 🔗 **[Live Demo](your-streamlit-app-link)**
@@ -92,9 +92,6 @@ This project is licensed under the **MIT License**.
 ## 🤝 Contributing
 Feel free to **open issues** or submit **pull requests** to improve this project. Suggestions are welcome!
 
----
-## 📞 Contact
-For any queries, reach out via **[your-email@example.com](mailto:your-email@example.com)** or open an issue in the repository.
 
 🚀 Happy Coding!
 
