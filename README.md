@@ -7,6 +7,11 @@ This portfolio showcases a collection of data-driven projects I've completed as 
 
 ## Machine Learning and Deep Learning Projects
 
+<img align = "left" width = "240" height = "180" src="https://github.com/user-attachments/assets/49219431-f013-48d2-8505-d174538b1a91"></img> **[PDF Q&A System using LangChain, FAISS, HuggingFace Embeddings](https://github.com/paineni/Projects/tree/main/yolov1)**
+
+I built this interactive RAG (Retrieval-Augmented Generation) app using Streamlit, FAISS, and LangChain. The system takes any collection of PDFs—like research papers or resumes—and allows users to ask natural language questions. It retrieves relevant content using FAISS + HuggingFace embeddings and passes the chunks to LLaMA3 via the GROQ API to generate grounded answers. I also added a context viewer to trace back the supporting documents, making it useful for transparent, document-grounded question answering.
+
+---
 <img align = "left" width = "240" height = "180" src="https://github.com/user-attachments/assets/81573cf1-6d53-42e6-ae5c-c42191d2d768"></img> **[YOLOv1 with VGG Architecture for Object Detection](https://github.com/paineni/Projects/tree/main/yolov1)**
 
 In this project, I implemented the YOLOv1 (You Only Look Once) architecture with a VGG-based model for object detection. The system is designed to identify and classify objects in images in a single pass, significantly improving the accuracy of the detected classes. I trained the model on various datasets, fine-tuning the VGG architecture to enhance the feature extraction process for object localization and classification in real-time applications.
