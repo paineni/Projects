@@ -1,7 +1,3 @@
-Here’s a clean and well-formatted version of your **📄 PDF Q&A System with LangChain, FAISS & HuggingFace Embeddings** project README, with proper code blocks, sectioning, and markdown styling:
-
----
-
 # 📄 PDF Q&A System with LangChain, FAISS & HuggingFace Embeddings 🤖🔍  
 **Retrieval-Augmented Generation (RAG) Application**
 
