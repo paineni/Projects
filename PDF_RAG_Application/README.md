@@ -31,32 +31,31 @@ This repository implements a **Retrieval-Augmented Generation (RAG)** pipeline t
 
 ---
 
-## 🛠️ Setup Instructions
+🔧 Installation Steps
+Clone the repository:
 
-### 📦 Prerequisites
-
-- Python 3.8 or later  
-- GROQ API Key (for LLaMA3)  
-- HuggingFace token (optional, for downloading embeddings)
-
----
-
-### 🔧 Installation Steps
-
-```bash
+bash
+Copy
+Edit
 git clone https://github.com/paineni/Projects.git
 cd Projects/pdf_rag_app
+Create and activate a virtual environment:
+
 bash
 Copy
 Edit
 python -m venv venv
-venv\Scripts\activate  # Windows
-source venv/bin/activate  # macOS/Linux
+# For Windows:
+venv\Scripts\activate
+# For macOS/Linux:
+source venv/bin/activate
+Install the dependencies:
+
 bash
 Copy
 Edit
 pip install -r requirements.txt
-Create a .env file and add:
+Create a .env file and add your credentials:
 
 ini
 Copy
@@ -74,25 +73,31 @@ Edit
 streamlit run app.py
 Embed PDFs
 
-Click "Document Embedding" in the UI to build the vector store.
+Click the "Document Embedding" button in the UI to create the FAISS vector store.
 
 Ask Questions
 
-Type any query. The app will retrieve document context, pass it to the LLM, and generate an answer.
+Type any query. The app will:
+
+Retrieve relevant document chunks
+
+Pass them to the LLM
+
+Generate a grounded answer
 
 View Source Chunks
 
-Expand the result section to inspect similar document snippets used for answering.
+Expand the “Documents Similarity Search” section to inspect supporting document text.
 
 🔍 Example Use Cases
-Research paper assistant
+📚 Research paper assistant
 
-Resume Q&A bot
+📄 Resume Q&A bot
 
-Legal document helper
+⚖️ Legal document helper
 
-Company knowledge base search
+🏢 Company knowledge base search
 
 🤝 Contributing
-PRs and suggestions welcome!
-Let’s improve this together!
+PRs and suggestions are welcome!
+Let’s improve this together — from LLM integration to UI enhancements.
