@@ -115,3 +115,6 @@ pdf_rag_app/
 PRs and suggestions are welcome!  
 Let’s improve this together!!
 
+---
+## 📜 License
+This project is licensed under the MIT License.
