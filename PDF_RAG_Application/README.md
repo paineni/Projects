@@ -33,7 +33,7 @@
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/paineni/Projects.git
-cd Projects/pdf_rag_app
+cd Projects/PDF_RAG_Application
 ```
 
 ### 2. Create and Activate a Virtual Environment
