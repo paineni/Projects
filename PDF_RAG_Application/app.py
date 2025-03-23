@@ -1,70 +1,75 @@
 import streamlit as st
 import os
-from langchain_groq import ChatGroq
-from langchain_community.embeddings import OllamaEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_core.prompts import ChatPromptTemplate
-from langchain.chains import create_retrieval_chain
-from langchain_community.vectorstores import FAISS
-from langchain_community.document_loaders import PyPDFDirectoryLoader
-import openai
-
 from dotenv import load_dotenv
+
+from core.llm import load_llm
+from core.embeddings import load_embeddings
+from core.retriever import create_retriever, create_contextual_retriever
+from core.qa_chain import create_rag_chain
+from core.memory import wrap_chain_with_memory, get_session_history
+from utils.pdf_loader import load_pdf_from_upload
+from core.memory import save_session_history
+
+# Load environment variables
 load_dotenv()
-## load the GROQ API Key
-groq_api_key=os.getenv("GROQ_API")
+os.environ['HF_TOKEN'] = os.getenv("HF_TOKEN")
 
-## If you do not have open AI key use the below Huggingface embedding
-os.environ['HF_TOKEN']=os.getenv("HF_TOKEN")
-from langchain_huggingface import HuggingFaceEmbeddings
-embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+# Streamlit App UI
+st.set_page_config(page_title="Conversational PDF Q&A", layout="wide")
+st.title("🧠 Conversational RAG with PDF Uploads and Chat History")
+st.write("Upload PDFs and ask natural language questions about their content.")
 
-llm=ChatGroq(groq_api_key=groq_api_key,model_name="Llama3-8b-8192")
+# Session state initialization
+if 'store' not in st.session_state:
+    st.session_state.store = {}
 
-prompt = ChatPromptTemplate.from_template(
-    """
-    Answer the questions based on the provided context only.
-    Please provide the most accurate responsebased on the question
-    <context>
-    {context}   
-    <context>
-    Question:{input}
-    
-    """
-    
-)
+# GROQ API Key Input
+api_key = st.text_input("🔐 Enter your GROQ API Key:", type="password")
 
-def create_vector_embedding():
-    if "vectors" not in st.session_state:
-        st.session_state.embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-        st.session_state.loader = PyPDFDirectoryLoader("PDF_RAG_Application/research_papers") ## Data Ingestion Step
-        st.session_state.docs = st.session_state.loader.load() ## Document Loading
-        st.session_state.text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000,chunk_overlap=200)
-        st.session_state.final_documents = st.session_state.text_splitter.split_documents(st.session_state.docs[:50])
-        st.session_state.vectors = FAISS.from_documents(st.session_state.final_documents,embedding = st.session_state.embeddings)
+if api_key:
+    session_id = st.text_input("💬 Session ID", value="default_session")
 
-user_prompt = st.text_input("Enter your query from the research paper")
+    # Initialize LLM and Embeddings
+    llm = load_llm(api_key)
+    embeddings = load_embeddings()
 
-if st.button("Document Embedding"):
-    create_vector_embedding()
-    st.write("Vector Database is ready")
+    # File uploader
+    uploaded_files = st.file_uploader("📄 Upload one or more PDF files", type="pdf", accept_multiple_files=True)
 
-import time
+    if uploaded_files:
+        # Load and parse all uploaded PDFs
+        documents = []
+        for upload_file in uploaded_files:
+            docs = load_pdf_from_upload(upload_file)
+            documents.extend(docs)
 
-if user_prompt:
-    document_chain=create_stuff_documents_chain(llm,prompt)
-    retriever=st.session_state.vectors.as_retriever()
-    retrieval_chain=create_retrieval_chain(retriever,document_chain)
+        # Build retriever and contextual retriever
+        retriever = create_retriever(documents, embeddings)
+        history_aware_retriever = create_contextual_retriever(llm, retriever)
 
-    start=time.process_time()
-    response=retrieval_chain.invoke({'input':user_prompt})
-    print(f"Response time :{time.process_time()-start}")
+        # Build RAG chain with chat memory
+        rag_chain = create_rag_chain(llm, history_aware_retriever)
+        conversational_rag_chain = wrap_chain_with_memory(rag_chain, st.session_state.store)
 
-    st.write(response['answer'])
+        # User query input
+        user_input = st.text_input("❓ Ask a question from the PDF content:")
 
-    ## With a streamlit expander
-    with st.expander("Document similarity Search"):
-        for i,doc in enumerate(response['context']):
-            st.write(doc.page_content)
-            st.write('------------------------')
+        if user_input:
+            # Get chat history and invoke chain
+            session_history = get_session_history(session_id, st.session_state.store)
+            response = conversational_rag_chain.invoke(
+                {"input": user_input},
+                config={"configurable": {"session_id": session_id}}
+            )
+            save_session_history(session_id, session_history)
+            # Display the result
+            st.markdown(f"**🤖 Assistant:** {response['answer']}")
+
+            # Optionally show history
+            with st.expander("🕘 Chat History"):
+                for msg in session_history.messages:
+                    speaker = "🧑 You" if msg.type == "human" else "🤖 Bot"
+                    st.markdown(f"**{speaker}:** {msg.content}")
+
+else:
+    st.warning("Please enter your GROQ API key to continue.")
