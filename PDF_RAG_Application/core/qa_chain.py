@@ -16,7 +16,7 @@ system_prompt = (
 def create_qa_chain(llm):
     qa_prompt = ChatPromptTemplate.from_messages([
         ("system", system_prompt),
-        MessagesPlaceholder("chat_history"),
+        
         ("human", "{input}")
     ])
     qa_chain = create_stuff_documents_chain(llm, qa_prompt)
