@@ -14,7 +14,6 @@
 This repository provides an implementation of a **Next Word Prediction** model using **Long Short-Term Memory (LSTM) networks**. The model is trained on **Shakespeare's Hamlet** text data and can predict the next word in a given sentence.
 
 ## 🚀 Key Features
-- **Deployed on Streamlit Cloud**: The model is hosted on **Streamlit Cloud**, allowing users to interact with it online without any local setup.
 - **Data Preprocessing**: Tokenization, sequence creation, and padding of textual data.
 - **Deep Learning Model**: LSTM-based neural network for sequence prediction.
 - **Training with Early Stopping**: Prevents overfitting by stopping when validation loss stops improving.
@@ -51,12 +50,6 @@ pip install -r requirements.txt
 
 ---
 ## 🧑‍💻 Usage
-
-### **🌐 Try it Online (Work in Progress)**
-The model is deployed on **Streamlit Cloud** and can be accessed here:
-
-🔗 **[Live Demo](your-streamlit-app-link)**
-
 
 ### **1️⃣ Train the Model**
 Run the training script to preprocess data and train the LSTM model:
