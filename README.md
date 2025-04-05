@@ -7,6 +7,11 @@ This portfolio showcases a collection of data-driven projects I've completed as 
 
 ## Machine Learning and Deep Learning Projects
 
+<img align = "left" width = "240" height = "180" src="https://github.com/user-attachments/assets/e706872c-f2af-4c59-891a-b40ad2e79766"></img> **[Next Word Prediction using LSTM RNN](https://github.com/paineni/Projects/tree/main/LSTM_RNN)**
+
+I developed a next-word prediction model using LSTM networks trained on Shakespeare’s Hamlet. The project covers the complete pipeline, including tokenization, sequence generation, and padding for textual data. I implemented a deep learning architecture with early stopping to prevent overfitting and deployed the trained model using Streamlit for real-time, interactive predictions. The final model is saved and reusable, offering a practical demonstration of sequence modeling and text generation with recurrent neural networks.
+
+---
 <img align = "left" width = "240" height = "180" src="https://github.com/user-attachments/assets/49219431-f013-48d2-8505-d174538b1a91"></img> **[PDF + Web Search Assistant with LangChain, FAISS & GROQ](https://github.com/paineni/Projects/tree/main/PDF_RAG_Application)**
 
 I built a modular, RAG-based document assistant using LangChain, FAISS, and all-MiniLM-L6-v2 embeddings. The app supports multi-document PDF upload, semantic chunking, and real-time vector search, with grounded answer generation powered by GROQ-hosted LLMs like LLaMA3-8B and DeepSeek-R1. I integrated a Zero-Shot ReAct Agent to dynamically orchestrate tools like DuckDuckGo, Wikipedia, and Arxiv, and designed a modern Streamlit UI with multi-turn memory, model switching, and an optional Conversational RAG mode. The system follows a plug-and-play architecture, making it easy to extend and adapt.
