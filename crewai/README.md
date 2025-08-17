@@ -1,5 +1,18 @@
 # 📝 Multi-Agent Blog Generator from YouTube Videos  
 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Multi-Agent](https://img.shields.io/badge/Multi--Agent-crewAI-orange)
+![LLMs](https://img.shields.io/badge/LLMs-LLaMA3%20%7C%20Ollama-red)
+![YouTube](https://img.shields.io/badge/Tool-YouTube%20Channel%20Search-critical)
+![CrewAI](https://img.shields.io/badge/Framework-CrewAI-9cf)
+![Workflow](https://img.shields.io/badge/Process-Sequential%20Agent%20Orchestration-lightgrey)
+![Memory](https://img.shields.io/badge/Memory-Agent%20Memory%20%26%20Delegation-blue)
+![Markdown](https://img.shields.io/badge/Output-Markdown%20Blog%20Post-brightgreen)
+![Content](https://img.shields.io/badge/Use--Case-Content%20Automation%20%7C%20Summarization-success)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-lightgreen)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Open Source Love](https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F-Open%20Source-pink)
+
 A multi-agent system powered by **crewAI** and **Ollama LLaMA3** that automatically researches YouTube videos and generates engaging blog posts.  
 
 This project demonstrates how **collaborating AI agents** can transform raw video content into structured, publication-ready blog articles.  
