@@ -44,8 +44,6 @@ venv\Scripts\activate      # Windows
 pip install -r requirements.txt
 ```
 
-(Optional) Add API keys or configs in `.env`.
-
 ## 🚀 Usage  
 
 ```python
