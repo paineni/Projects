@@ -33,7 +33,7 @@ This project demonstrates how **collaborating AI agents** can transform raw vide
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/multi-agent-blog-generator.git
-cd multi-agent-blog-generator
+cd crewai
 
 # Create and activate a virtual environment
 python -m venv venv
